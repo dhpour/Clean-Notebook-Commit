@@ -13,3 +13,6 @@ You need [underscore-cli](https://github.com/ddopson/underscore-cli) for using t
 
     npm install -g underscore-cli
     underscore help
+
+### Similar works
+For having more control over the process or manipulating the notebooks you can use [nbstripout](https://github.com/kynan/nbstripout) and [nb-clean](https://github.com/srstevenson/nb-clean).
