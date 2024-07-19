@@ -3,6 +3,7 @@
 Ban your nnotebooks commits if their output cells are not empty.
 
 ### Usage
+Copy pre-commit to your repo hooks: 
 
     cat pre-commit >> .git/hooks/pre-commit
 
