@@ -4,7 +4,7 @@ for f in $(git diff --name-only --cached); do
 		has_content="$(cat $f | underscore select '.cells' | underscore flatten --shallow | underscore any 'value?.outputs?.length > 0')"
 		if $has_content
 		then
-			echo -e '\033[0;31mNotebook ' $f ' output cells are not clean!\033[0m'
+			echo -e 'Notebook ' $f ' \033[0;31moutput cells are not clean!\033[0m'
 			git reset
 			#echo 'Unstage ' $f ' file and clean its cell outputs'
 			exit 1
